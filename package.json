@@ -1,6 +1,6 @@
 {
-  "name": "@quantidexyz/oven-api",
-  "description": "Breadcrumb.cash Oven API",
+  "name": "@quantidexyz/oven-sdk",
+  "description": "Breadcrumb.cash Oven SDK",
   "version": "0.0.0",
   "exports": {
     ".": {
@@ -81,13 +81,13 @@
     "typescript-eslint": "^8.40.0"
   },
   "license": "LGPL-3.0",
-  "homepage": "https://github.com/quantidexyz/oven-api",
+  "homepage": "https://github.com/quantidexyz/oven-sdk",
   "authors": [
     "quantidexyz"
   ],
-  "repository": "quantidexyz/oven-api",
+  "repository": "quantidexyz/oven-sdk",
   "bugs": {
-    "url": "https://github.com/quantidexyz/oven-api/issues"
+    "url": "https://github.com/quantidexyz/oven-sdk/issues"
   },
   "keywords": [
     "breadcrumbcash",
