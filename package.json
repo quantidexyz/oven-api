@@ -1,6 +1,6 @@
 {
-  "name": "<pkg_name>",
-  "description": "INVERTER typescript NPM package template",
+  "name": "@quantidexyz/oven-api",
+  "description": "Breadcrumb.cash Oven API",
   "version": "0.0.0",
   "exports": {
     ".": {
@@ -79,16 +79,18 @@
     "typescript-eslint": "^8.40.0"
   },
   "license": "LGPL-3.0",
-  "homepage": "https://github.com/<github_username>/<pkg_name>",
+  "homepage": "https://github.com/quantidexyz/oven-api",
   "authors": [
-    "<github_username>"
+    "quantidexyz"
   ],
-  "repository": "<github_username>/<pkg_name>",
+  "repository": "quantidexyz/oven-api",
   "bugs": {
-    "url": "https://github.com/<github_username>/<pkg_name>/issues"
+    "url": "https://github.com/quantidexyz/oven-api/issues"
   },
   "keywords": [
-    "npm",
+    "breadcrumbcash",
+    "api",
+    "sdk",
     "contracts",
     "web3",
     "ethereum",
