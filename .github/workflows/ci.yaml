@@ -15,19 +15,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Create GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          draft: false
-          prerelease: false
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$TAG" \
+            --repo="$GITHUB_REPOSITORY" \
+            --title="${GITHUB_REPOSITORY#*/} ${TAG#v}" \
+            --generate-notes \
+            ${{ contains(github.ref_name, 'alpha') && '--prerelease' || contains(github.ref_name, 'beta') && '--prerelease' || '' }}
 
   publish:
     runs-on: ubuntu-latest
+    needs: release
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
